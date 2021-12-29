@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Напоминание пить воду</string>
+
+    <!-- ниже строки из старого проекта -->
+    <string name="say_to_me">Сообщите нам</string>
+    <string name="bad_design">Мне не нравится дизайн</string>
+    <string name="hard_use">Сложно пользоваться</string>
+    <string name="bad_translate">Плохой перевод</string>
+    <string name="few_functions">Недостаточно функций</string>
+    <string name="bad_icon">Плохая иконка</string>
+
+    <string name="title_home">Домой</string>
+    <string name="title_notifications">Уведомления</string>
+    <string name="title_settings">Настройки</string>
+
+    <string name="bar_notification">Уведомления</string>
+    <string name="bar_settings">Настройки</string>
+
+    <string name="switch_Icons">Большие значки</string>
+    <string name="text_Pol_Head">Пол</string>
+    <string name="text_Pol_M">Мужской</string>
+    <string name="text_Pol_F">Женский</string>
+    <string name="text_Ves_Head">Вес</string>
+    <string name="text_Ves">60</string>
+    <string name="text_Ves_Mera">КГ</string>
+    <string name="switch_Auto_Calc">Задать потребление вручную</string>
+    <string name="text_Norma_Head">Норма</string>
+    <string name="text_Norma">1800</string>
+    <string name="text_Norma_Mera">МЛ</string>
+    <string name="text_Trening_Head">Режим тренировки</string>
+    <string name="text_Trening">400</string>
+    <string name="text_Trening_Mera">МЛ</string>
+    <string name="check_resolution">Политика конфиденциальности</string>
+
+    <string name="switch_Notif">Уведомления</string>
+    <string name="text_Interval_Head">Интервал</string>
+    <string name="text_Interval">Каждый час</string>
+    <string name="text_TimeStart_Head">Старт</string>
+    <string name="text_TimeStart">10:15</string>
+    <string name="text_TimeStop_Head">Стоп</string>
+    <string name="text_TimeStop">21:15</string>
+    <string name="switch_Vibro">Вибрация</string>
+    <string name="text_Sound_Head">Выбор мелодии</string>
+
+    <string name="rating_First">Насколько вам нравится</string>
+    <string name="rating_Second">наше приложение?</string>
+    <string name="rating_Never">Никогда</string>
+    <string name="rating_NotNow">Позже</string>
+    <string name="rating_Send">Отправить</string>
+    <string name="rating_Cancel">Отмена</string>
+
+    <string name="halfhour">Каждые 30 минут</string>
+    <string name="hour">Каждый час</string>
+    <string name="twohour">Каждые 2 часа</string>
+    <string name="fourhour">Каждые 4 часа</string>
+
+    <string name="silence">Без звука</string>
+    <string name="defaultsound">Стандартная</string>
+    <string name="shortsound">Короткая</string>
+    <string name="longsound">Длинная</string>
+
+    <string name="dialog_ves">Укажите вес</string>
+    <string name="dialog_ok">Ок</string>
+    <string name="dialog_cancel">Отмена</string>
+    <string name="dialog_norma">Укажите объём</string>
+    <string name="dialog_trening">Укажите доп. объём</string>
+
+    <string name="notif_title">Время пить!</string>
+    <string name="notif_text">Пейте воду - оставайтесь в форме</string>
+
+    <string name="switch_on">ВКЛ</string>
+    <string name="switch_off">ВЫКЛ</string>
+
+    <string name="ml">мл</string>
+    <string name="take_drink">Выберите напиток</string>
+
+    <string name="erorr_purchase">Ошибка формы согласия</string>
+    <string name="plus" translatable="false">+</string>
+    <string name="basicVolume" translatable="false">1800</string>
+    <string name="delimiterVolumeWater" translatable="false">/</string>
+    <string name="nullVolumeWater" translatable="false">0</string>
+    <string name="againToExit">Нажмите ещё раз для выхода</string>
+    <string name="addtolist">Для правильной работы уведомлений добавьте приложение в список без оптимизации</string>
+    <string name="ok">Хорошо</string>
+    <string name="later">Позже</string>
+    <string name="recreate">Изменение этого поля пересоздаст уведомление</string>
+    <string name="terms_and_conditions">Условия и положения</string>
+    <string name="regionauto_app">Коды регионов авто</string>
+    <string name="checkphones_app">Левый или Правый?</string>
+    <string name="water_reminder_app">Напоминание о воде</string>
+    <string name="our_apps">Наши приложения</string>
+
+</resources>

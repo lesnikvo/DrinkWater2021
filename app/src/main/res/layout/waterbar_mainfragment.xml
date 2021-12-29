@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+    android:id="@+id/card"
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    app:cardCornerRadius="5dp"
+    app:contentPadding="2dp"
+    android:elevation="5dp"
+    app:cardElevation="5dp"
+    android:padding="0dp"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:max="1800"
+            android:maxHeight="100dp"
+            android:minHeight="100dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/greenprogress"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imageViewHistory"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:baselineAlignBottom="@id/card"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_history_black_48dp" />
+
+        <TextView
+            android:id="@+id/volumeWater2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/volumeWater"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="100dp"
+            android:text="@string/basicVolume"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/volumeWaterSlash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/volumeWater2"
+            android:layout_toStartOf="@id/volumeWater2"
+            android:text="@string/delimiterVolumeWater"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/volumeWater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/volumeWaterSlash"
+            android:text="@string/nullVolumeWater"
+            android:textColor="#000000"
+            android:textSize="48sp"
+            android:textStyle="italic"/>
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
+</FrameLayout>

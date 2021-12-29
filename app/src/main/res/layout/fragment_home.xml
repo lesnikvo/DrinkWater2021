@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment"
+    tools:ignore="MergeRootFrame">
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/card"
+        android:columnCount="3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:numColumns="3"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="103dp"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:listSelector="@drawable/list_selector"/>
+
+    <include layout="@layout/waterbar_mainfragment" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignTop="@id/floatingAdd"
+        android:layout_alignParentBottom="true"
+        android:focusable="true"
+        android:clickable="true"
+        android:alpha="0.5">
+    </FrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/floatingAdd"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginStart="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:borderWidth="0dp"
+        app:tint="@null"
+        app:srcCompat="@drawable/ic_replay_light_orange_24dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="normal"
+        app:borderWidth="0dp"
+        app:tint="@null"
+        app:srcCompat="@drawable/ic_add_white_48dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingSport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/floatingBack"
+        android:layout_marginEnd="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:borderWidth="0dp"
+        app:tint="@null"
+        app:srcCompat="@drawable/ic_fitness_center_light_orange_24dp"/>
+
+    <include layout="@layout/waterchange_mainfragment"/>
+
+    <FrameLayout
+        android:id="@+id/frameConfigBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="#000000"
+        android:clickable="true"
+        android:focusable="true"
+        android:elevation="9dp"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/frameBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/frameWater"
+        android:alpha="0.5"
+        android:background="#000000"
+        android:clickable="true"
+        android:focusable="true"
+        android:elevation="9dp"
+        android:visibility="gone">
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textViewChoiceWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/frameWater"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:text="@string/take_drink"
+        android:elevation="10dp"
+        android:textColor="#ffffff"
+        android:visibility="gone"/>
+
+    <include layout="@layout/spisokwater_mainfragment"/>
+
+    <include layout="@layout/volumenizwater_mainfragment"/>
+
+    <include layout="@layout/rating_first_mainfragment"/>
+    <include layout="@layout/rating_secont_mainfragment"/>
+
+</RelativeLayout>

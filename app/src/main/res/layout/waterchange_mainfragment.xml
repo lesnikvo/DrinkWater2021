@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/frameWaterConfigure"
+    android:layout_width="300dp"
+    android:layout_height="280dp"
+    android:layout_centerInParent="true"
+    android:background="#ffffff"
+    android:elevation="10dp"
+    android:visibility="gone"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp">
+
+        <Button
+            android:id="@+id/buttonViewOkConfig"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#2196F3"
+            android:backgroundTint="#ffffff"
+            android:text="@android:string/ok"/>
+
+        <Button
+            android:id="@+id/buttonViewCancelConfig"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@id/buttonViewOkConfig"
+            android:textColor="#2196F3"
+            android:backgroundTint="#ffffff"
+            android:text="@android:string/cancel"/>
+
+        <ImageView
+            android:id="@+id/imageConfig"
+            android:layout_width="110dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/textVolumeConfig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="80dp"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:text="200"/>
+
+        <TextView
+            android:id="@+id/textVolumeConfig2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:text="@string/ml"/>
+
+        <FrameLayout
+            android:id="@+id/frameBackLight"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="73dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/seekbarmy"
+            android:visibility="visible">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameBackDark13"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginStart="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="73dp"
+            android:background="@drawable/seekbarmy2"
+            android:layout_alignEnd="@id/textProgressConfig13"
+            android:visibility="visible">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameBackDark12"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginStart="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="73dp"
+            android:background="@drawable/seekbarmy2"
+            android:layout_alignEnd="@id/textProgressConfig12"
+            android:visibility="visible">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameBackDark23"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginStart="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="73dp"
+            android:background="@drawable/seekbarmy2"
+            android:layout_alignEnd="@id/textProgressConfig23"
+            android:visibility="visible">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameBackDark11"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginStart="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="73dp"
+            android:background="@drawable/seekbarmy2"
+            android:layout_alignEnd="@id/textProgressConfig11"
+            android:visibility="visible">
+        </FrameLayout>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="59dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            android:layout_alignParentEnd="true"
+            android:thumb="@drawable/thumbseekbar"
+            android:progressDrawable="@drawable/seekbarmy"
+            android:progress="3"
+            android:max="3"
+            android:thumbOffset="7dp"/>
+
+        <ImageView
+            android:id="@+id/imageDeleteWater"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:onClick="onImageDeleteWater"
+            app:srcCompat="@drawable/ic_delete_red_36dp" />
+
+        <ImageView
+            android:id="@+id/imageCopyWater"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="90dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:onClick="onImageCopyWater"
+            app:srcCompat="@drawable/ic_content_copy_black_36dp" />
+
+        <TextView
+            android:id="@+id/textProgressConfig12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="123dp"
+            android:layout_marginBottom="79dp"
+            android:textColor="#ffffff"
+            android:text="1/2"/>
+
+
+        <TextView
+            android:id="@+id/textProgressConfig13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="75dp"
+            android:layout_marginBottom="79dp"
+            android:textColor="#ffffff"
+            android:text="1/3"/>
+
+        <TextView
+            android:id="@+id/textProgressConfig23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="171dp"
+            android:layout_marginBottom="79dp"
+            android:textColor="#ffffff"
+            android:text="2/3"/>
+
+        <TextView
+            android:id="@+id/textProgressConfig11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="221dp"
+            android:layout_marginBottom="79dp"
+            android:textColor="#000000"
+            android:text="1/1"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

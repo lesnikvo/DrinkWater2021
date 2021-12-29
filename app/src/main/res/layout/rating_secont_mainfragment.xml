@@ -1,0 +1,105 @@
+<FrameLayout android:id="@+id/framePostRating"
+    android:layout_width="320dp"
+    android:layout_height="340dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/ratingbackground"
+    android:elevation="10dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:visibility="gone"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:layout_margin="0dp">
+
+        <TextView
+            android:id="@+id/textView_ratingThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="@string/say_to_me"/>
+
+        <CheckBox
+            android:id="@+id/checkRating1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textView_ratingThree"
+            android:textSize="16sp"
+            android:text="@string/bad_design"/>
+
+        <CheckBox
+            android:id="@+id/checkRating2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignStart="@id/checkRating1"
+            android:layout_below="@id/checkRating1"
+            android:textSize="16sp"
+            android:text="@string/hard_use"/>
+
+        <CheckBox
+            android:id="@+id/checkRating3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignStart="@id/checkRating2"
+            android:layout_below="@id/checkRating2"
+            android:textSize="16sp"
+            android:text="@string/bad_translate"/>
+
+        <CheckBox
+            android:id="@+id/checkRating4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignStart="@id/checkRating3"
+            android:layout_below="@id/checkRating3"
+            android:textSize="16sp"
+            android:text="@string/few_functions"/>
+
+        <CheckBox
+            android:id="@+id/checkRating5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignStart="@id/checkRating4"
+            android:layout_below="@id/checkRating4"
+            android:textSize="16sp"
+            android:text="@string/bad_icon"/>
+
+        <Button
+            android:id="@+id/buttonRatingCancel"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/grey_500"
+            android:text="@string/rating_Cancel"
+            android:background="@drawable/ratingbuttonleft"
+            android:focusable="true"
+            android:clickable="true"
+            android:onClick="onClickRatingCancel"/>
+
+        <Button
+            android:id="@+id/buttonRatingSend"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#000000"
+            android:text="@string/rating_Send"
+            android:background="@drawable/ratingbuttonright"
+            android:focusable="true"
+            android:clickable="true"
+            android:onClick="onClickRatingSend"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/frameRating"
+    android:layout_width="320dp"
+    android:layout_height="340dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/ratingbackground"
+    android:elevation="10dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:visibility="gone"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:layout_margin="0dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/rating_ico"/>
+
+        <TextView
+            android:id="@+id/textView_ratingFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="140dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:text="@string/rating_First"/>
+
+        <TextView
+            android:id="@+id/textView_ratingSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textView_ratingFirst"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:text="@string/rating_Second"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:stepSize="1"
+            android:rating="2"
+            android:isIndicator="false"
+            style="@style/Base.Widget.AppCompat.RatingBar.Indicator"/>
+
+        <Button
+            android:id="@+id/buttonRatingNever"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorLightBlue"
+            android:text="@string/rating_Never"
+            android:background="@drawable/ratingbuttonleft"
+            android:focusable="true"
+            android:clickable="true"
+            android:onClick="onClickRatingNever"/>
+
+        <Button
+            android:id="@+id/buttonRatingNotNow"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#000000"
+            android:text="@string/rating_NotNow"
+            android:background="@drawable/ratingbuttonright"
+            android:focusable="true"
+            android:clickable="true"
+            android:onClick="onClickRatingNotNow"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

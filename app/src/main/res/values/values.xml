@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="messagesHeadArray">
+        <item>Пора пить</item>
+        <item>Время пришло</item>
+        <item>Вода, чай, кофе</item>
+        <item>Без воды и ты  не ты</item>
+    </string-array>
+
+    <string-array name="messagesBodyArray">
+        <item>Пришло время выпить</item>
+        <item>Пить или пить - не вопрос</item>
+        <item>Пьёшь? Молодец</item>
+        <item>Не пьёшь? Пееей</item>
+    </string-array>
+</resources>

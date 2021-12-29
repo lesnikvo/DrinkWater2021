@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="170dp"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:src="@drawable/water_cup">
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivImage"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDescr"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textColor="#0a0a0a"/>
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:id="@+id/tvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/tvDescr"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+</RelativeLayout>

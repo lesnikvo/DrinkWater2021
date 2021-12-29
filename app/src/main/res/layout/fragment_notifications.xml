@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.NotificationsFragment">
+<LinearLayout
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--
+    если в кардВью добавить
+            android:clickable="true"
+        android:focusable="true"
+        то эффект нажатия будет, но обрабатывать тогда именно кардВью,
+        а не элементы
+        -->
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:elevation="2dp"
+        app:cardElevation="2dp"
+        app:contentPaddingRight="15dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="5dp">
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchNotif"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:defaultValue="false"
+            android:paddingStart="15dp"
+            android:paddingEnd="0dp"
+            android:switchTextOff="@string/switch_off"
+            android:switchTextOn="@string/switch_on"
+            android:text="@string/switch_Notif"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardInterval"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:elevation="2dp"
+        app:cardElevation="2dp"
+        app:contentPaddingLeft="15dp"
+        app:contentPaddingRight="15dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textIntervalHead"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="@string/text_Interval_Head"
+                android:textStyle="bold"
+                android:textColor="#B0BEC5"/>
+
+            <TextView
+                android:id="@+id/textInterval"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="@string/text_Interval"
+                android:textColor="#B0BEC5"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardStart"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:elevation="2dp"
+        app:cardElevation="2dp"
+        app:contentPaddingLeft="15dp"
+        app:contentPaddingRight="15dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textTimeStartHead"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="@string/text_TimeStart_Head"
+                android:textStyle="bold"
+                android:textColor="#B0BEC5"/>
+
+            <TextView
+                android:id="@+id/textTimeStart"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="@string/text_TimeStart"
+                android:textColor="#B0BEC5"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardStop"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:elevation="2dp"
+        app:cardElevation="2dp"
+        app:contentPaddingLeft="15dp"
+        app:contentPaddingRight="15dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textTimeStopHead"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="@string/text_TimeStop_Head"
+                android:textStyle="bold"
+                android:textColor="#B0BEC5"/>
+
+            <TextView
+                android:id="@+id/textTimeStop"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="@string/text_TimeStop"
+                android:textColor="#B0BEC5"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:elevation="2dp"
+        app:cardElevation="2dp"
+        app:contentPaddingLeft="15dp"
+        app:contentPaddingRight="15dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginBottom="5dp">
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchVibro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:enabled="false"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_off"
+            android:switchTextOn="@string/switch_on"
+            android:text="@string/switch_Vibro"
+            android:textColor="#B0BEC5"
+            android:textStyle="bold"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardSound"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:elevation="2dp"
+        app:cardElevation="2dp"
+        app:contentPaddingLeft="15dp"
+        app:contentPaddingRight="15dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textSoundHead"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="@string/text_Sound_Head"
+                android:textStyle="bold"
+                android:textColor="#B0BEC5"/>
+
+            <TextView
+                android:id="@+id/textSound"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="@string/defaultsound"
+                android:textColor="#B0BEC5"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="263dp"
+        android:elevation="2dp"
+        app:cardElevation="2dp"
+        app:contentPaddingLeft="15dp"
+        app:contentPaddingRight="15dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:id="@+id/ourApps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="@color/black"
+                android:gravity="start|center_vertical"
+                android:textSize="16sp"
+                android:text="@string/our_apps"/>
+            <LinearLayout
+                android:id="@+id/autoApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp">
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/app_auto"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:textColor="@color/link_blue"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:text="@string/regionauto_app"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/headphonesApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp">
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/app_headphones"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:textColor="@color/link_blue"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:text="@string/checkphones_app"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/drinkwaterApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp">
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/app_drinkwater"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:textColor="@color/link_blue"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:text="@string/water_reminder_app"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
+</ScrollView>
